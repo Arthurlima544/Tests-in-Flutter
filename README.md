@@ -8,6 +8,12 @@ There will exist a listTile that will be a component and tested out in widgets, 
 
 The infinite list will be tested out in a integration test (end to end) to verify its proper functioning.
 
+Use MVC architeture.
+
+There will be a model. and it will be tested out using unit tests.
+
+For Golden Tests, will test the homepage of the aplication.
+
 To organize the criation of this app, i'll use Github issues to help.
 
 Figma Ui: https://www.figma.com/file/sJ4Qn3urGzNtqBV1wcsRje/App-Google-play?node-id=0%3A1
