@@ -6,10 +6,28 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: const Center(
-        child: Text("Hello"),
-      ),
+        appBar: AppBar(),
+        body: Container(
+          child: ListView.builder(
+              itemCount: 100,
+              itemBuilder: (BuildContext context, index) => ColorListTile(
+                    index: index,
+                  )),
+        ));
+  }
+}
+
+class ColorListTile extends StatelessWidget {
+  final int index;
+  const ColorListTile({
+    Key? key,
+    required this.index,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      title: Text("$index"),
     );
   }
 }
