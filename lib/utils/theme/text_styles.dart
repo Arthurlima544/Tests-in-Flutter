@@ -8,4 +8,9 @@ class TextStyles {
     fontWeight: FontWeight.w600,
     color: UiColors.heading,
   );
+  static final titleNormal = GoogleFonts.lexendDeca(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: UiColors.heading,
+  );
 }
