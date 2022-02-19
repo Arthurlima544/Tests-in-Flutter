@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:testinflutter/Controllers/Homepage/list_items_controller.dart';
 
 import 'Views/Homepage/home_page.dart';
 
@@ -14,7 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const HomePage(),
+      home: ChangeNotifierProvider<ListItemsController>(
+        create: (context) => ListItemsController(),
+        child: const HomePage(),
+      ),
       title: "App Colors",
     );
   }
