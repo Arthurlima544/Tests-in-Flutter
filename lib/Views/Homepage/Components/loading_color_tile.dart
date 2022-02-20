@@ -31,7 +31,7 @@ class LoadingColorTile extends StatelessWidget {
               width: 20,
             ),
             Text(
-              "Item 0",
+              "...",
               style: TextStyles.getTextStyle(TextStylesTags.titleNormal),
             ),
           ],

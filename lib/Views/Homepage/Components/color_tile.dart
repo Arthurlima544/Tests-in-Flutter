@@ -37,7 +37,7 @@ class ColorTile extends StatelessWidget {
               width: 20,
             ),
             Text(
-              "Item ${newRandonNumber(item.number)}",
+              "Item ${item.id}",
               style: TextStyles.getTextStyle(TextStylesTags.titleNormal),
             ),
           ],
@@ -45,10 +45,4 @@ class ColorTile extends StatelessWidget {
       ),
     );
   }
-}
-
-int newRandonNumber(int number) {
-  Random random = Random();
-  int res = number == 0 ? random.nextInt(20) : random.nextInt(20) * number;
-  return res;
 }

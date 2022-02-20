@@ -12,6 +12,7 @@ Future<ItemPage> fetchPage(int startingIndex) async {
       items: List.generate(
           math.min(itemsPerPage, totalItensLength - startingIndex),
           (index) => Item(
+              id: index,
               color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
                   .withOpacity(1.0),
               number: index)),
