@@ -4,6 +4,7 @@ import 'package:testinflutter/Controllers/Homepage/list_items_controller.dart';
 import 'package:testinflutter/Views/Homepage/Components/color_tile.dart';
 import 'package:testinflutter/utils/theme/text_styles.dart';
 import 'package:testinflutter/utils/theme/text_styles_tags.dart';
+import 'package:testinflutter/utils/theme/ui_colors.dart';
 
 import 'Components/loading_color_tile.dart';
 
@@ -13,10 +14,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "App Colors",
-          style: TextStyles.getTextStyle(TextStylesTags.titleNormal),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(103.0),
+        child: Container(
+          color: UiColors.primary,
+          alignment: Alignment.center,
+          child: Text(
+            "App Colors",
+            style: TextStyles.getTextStyle(TextStylesTags.titleHome),
+          ),
         ),
       ),
       body: Selector<ListItemsController, int?>(
