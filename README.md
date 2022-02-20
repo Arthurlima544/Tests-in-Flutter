@@ -14,7 +14,7 @@ There will be a model. and it will be tested out using unit tests.
 
 For Golden Tests, will test the homepage of the aplication.
 
-To organize the criation of this app, i'll use Github issues to help.
+On commit number ad80a89f832a4b03a79f79c4bb020945b3c5fb18 we've at leats 88% coverage with unit and widgets test,  in all pages and components
 
 Figma Ui: https://www.figma.com/file/sJ4Qn3urGzNtqBV1wcsRje/App-Google-play?node-id=0%3A1
 
