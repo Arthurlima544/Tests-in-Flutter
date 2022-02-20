@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testinflutter/utils/theme/text_styles.dart';
+import 'package:testinflutter/utils/theme/text_styles_tags.dart';
 import 'package:testinflutter/utils/theme/ui_colors.dart';
 
 class LoadingColorTile extends StatelessWidget {
@@ -31,7 +32,7 @@ class LoadingColorTile extends StatelessWidget {
             ),
             Text(
               "Item 0",
-              style: TextStyles.titleNormal,
+              style: TextStyles.getTextStyle(TextStylesTags.titleNormal),
             ),
           ],
         ),

@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:testinflutter/Models/item.dart';
 import 'package:testinflutter/utils/theme/text_styles.dart';
+import 'package:testinflutter/utils/theme/text_styles_tags.dart';
 import 'package:testinflutter/utils/theme/ui_colors.dart';
 
 class ColorTile extends StatelessWidget {
@@ -37,7 +38,7 @@ class ColorTile extends StatelessWidget {
             ),
             Text(
               "Item ${newRandonNumber(item.number)}",
-              style: TextStyles.titleNormal,
+              style: TextStyles.getTextStyle(TextStylesTags.titleNormal),
             ),
           ],
         ),

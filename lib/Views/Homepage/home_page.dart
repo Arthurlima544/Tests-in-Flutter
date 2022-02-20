@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:testinflutter/Controllers/Homepage/list_items_controller.dart';
 import 'package:testinflutter/Views/Homepage/Components/color_tile.dart';
 import 'package:testinflutter/utils/theme/text_styles.dart';
+import 'package:testinflutter/utils/theme/text_styles_tags.dart';
 
 import 'Components/loading_color_tile.dart';
 
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "App Colors",
-          style: TextStyles.titleHome,
+          style: TextStyles.getTextStyle(TextStylesTags.titleNormal),
         ),
       ),
       body: Selector<ListItemsController, int?>(
