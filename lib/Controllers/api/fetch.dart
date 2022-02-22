@@ -8,11 +8,20 @@ const totalItensLength = 500;
 
 Future<ItemPage> fetchPage(int startingIndex) async {
   await Future<void>.delayed(const Duration(milliseconds: 400));
+
+  if (startingIndex > totalItensLength) {
+    return ItemPage(
+      items: [],
+      startingIndex: startingIndex,
+      hasNext: false,
+    );
+  }
+
   return ItemPage(
       items: List.generate(
           math.min(itemsPerPage, totalItensLength - startingIndex),
           (index) => Item(
-              id: index,
+              id: startingIndex + index,
               color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt())
                   .withOpacity(1.0),
               number: index)),

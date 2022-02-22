@@ -26,25 +26,19 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Selector<ListItemsController, int?>(
-        selector: (context, controller) => controller.pagesLenght,
-        builder: (context, itemCount, child) {
-          return ListView.builder(
-            itemBuilder: (context, index) {
-              var pagesProvider = Provider.of<ListItemsController>(context);
+          selector: (context, controller) => controller.pagesLenght,
+          builder: (context, itemCount, child) => ListView.builder(
+                itemCount: itemCount,
+                itemBuilder: (context, index) {
+                  var pagesProvider = Provider.of<ListItemsController>(context);
 
-              // Catalog provides a single synchronous method for getting
-              // the current data.
-              var item = pagesProvider.getByIndex(index);
-
-              if (item.isLoading) {
-                return const LoadingColorTile();
-              }
-
-              return ColorTile(item: item);
-            },
-          );
-        },
-      ),
+                  var item = pagesProvider.getByIndex(index);
+                  if (item.isLoading) {
+                    return const LoadingColorTile();
+                  }
+                  return ColorTile(item: item);
+                },
+              )),
     );
   }
 }
