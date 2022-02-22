@@ -23,7 +23,8 @@ https://github.com/flutter/flutter/tree/master/packages/integration_test#usage
 To Run Integration test:
     - flutter drive \ --driver=test_driver/integration_test.dart \ --target=integration_test/train_test.dart
 
-
+Script integration tests:
+    https://github.com/flutter/flutter/tree/master/packages/integration_test#firebase-test-lab
 
 Figma Ui: https://www.figma.com/file/sJ4Qn3urGzNtqBV1wcsRje/App-Google-play?node-id=0%3A1
 
