@@ -5,12 +5,14 @@ Project with infinite list using:
 - MVC arquitecture
 - ChangeNotifier and Provider for state management
 - API consume
+- Firebase Test Lab
 
 This project is a base for some tests in flutter like:
 
 - Unit Test
 - Widget Test
 - Automated integration Test 
+
 ## How to run
 Project:
 
