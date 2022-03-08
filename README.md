@@ -1,9 +1,9 @@
 # About the Project
 
-Project with infinite list using:
+Project  using:
 
 - MVC arquitecture
-- ChangeNotifier and Provider for state management
+- ValueNotifier and Provider for state management
 - API consume
 - Firebase Test Lab
 
