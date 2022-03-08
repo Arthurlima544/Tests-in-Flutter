@@ -10,7 +10,7 @@ This project is a base for some tests in flutter like:
 
 - Unit Test
 - Widget Test
-- Integration Test with CI (Continuos Integration)
+- Automated integration Test 
 ## How to run
 Project:
 
