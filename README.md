@@ -15,16 +15,20 @@ This project is a base for some tests in flutter like:
 
 ## How to run
 Project:
-
 ```cmd
 flutter pub pub get
 ```
 
-Integration Test:
+Unit and Widget test's:
+```cmd
+flutter test
+```
 
+Integration Test:
 ```cmd
 flutter drive \ --driver=test_driver/integration_test.dart \ --target=integration_test/train_test.dart
 ```
+
 ## References
 
 - [Making integration test's](https://github.com/flutter/flutter/tree/master/packages/integration_test#usage)
