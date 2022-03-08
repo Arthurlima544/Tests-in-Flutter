@@ -1,31 +1,30 @@
-# Tests-in-Flutter
+# About the Project
 
-This project is a base for all tests in that exist in flutter.
+Project with infinite list using:
 
-Creating a simple view for infinite list with ValueNotifier to state Management.
+    - MVC arquitecture
+    - ChangeNotifier and Provider for state management
+    - API consume
 
-There will exist a listTile that will be a component and tested out in widgets, like soo , the widget can be reuse in other part of the application without breaking anything.
+This project is a base for some tests in flutter like:
 
-The infinite list will be tested out in a integration test (end to end) to verify its proper functioning.
+    - Unit Test
+    - Widget Test
+    - Integration Test with CI (Continuos Integration)
+## How to run
+Project:
 
-Use MVC architeture.
+```cmd
+flutter pub pub get
+```
 
-There will be a model. and it will be tested out using unit tests.
+Integration Test:
 
-For Golden Tests, will test the homepage of the aplication.
+```cmd
+flutter drive \ --driver=test_driver/integration_test.dart \ --target=integration_test/train_test.dart
+```
+## Good references
 
-On commit number ad80a89f832a4b03a79f79c4bb020945b3c5fb18 we've at leats 88% coverage with unit and widgets test,  in all pages and components
-
-To Make Integrations test see also:
-
-https://github.com/flutter/flutter/tree/master/packages/integration_test#usage
-
-To Run Integration test:
-    - flutter drive \ --driver=test_driver/integration_test.dart \ --target=integration_test/train_test.dart
-
-Script integration tests:
-    https://github.com/flutter/flutter/tree/master/packages/integration_test#firebase-test-lab
-
-Figma Ui: https://www.figma.com/file/sJ4Qn3urGzNtqBV1wcsRje/App-Google-play?node-id=0%3A1
-
-
+[Making integration test's](https://github.com/flutter/flutter/tree/master/packages/integration_test#usage)
+[Integration Test Script](https://github.com/flutter/flutter/tree/master/packages/integration_test#firebase-test-lab)
+[Figma](https://www.figma.com/file/sJ4Qn3urGzNtqBV1wcsRje/App-Google-play?node-id=0%3A1)
