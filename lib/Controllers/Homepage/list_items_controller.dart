@@ -60,7 +60,7 @@ class ListItemsController extends ChangeNotifier {
     }
     /* se não estiver carregada, carregue e retorne um item pre definido*/
     _fetchPage(startingIndex);
-    return Item.loading();
+    return const Item.loading();
   }
 
   void _cleanCache(int currentStartingIndex) {

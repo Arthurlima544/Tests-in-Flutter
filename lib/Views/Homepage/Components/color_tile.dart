@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:testinflutter/Models/item.dart';
 import 'package:testinflutter/utils/theme/text_styles.dart';
@@ -9,7 +7,7 @@ import 'package:testinflutter/utils/theme/ui_colors.dart';
 class ColorTile extends StatelessWidget {
   final Item item;
 
-  ColorTile({
+  const ColorTile({
     Key? key,
     required this.item,
   }) : super(key: key);
