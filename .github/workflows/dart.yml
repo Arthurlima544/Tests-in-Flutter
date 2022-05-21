@@ -24,7 +24,7 @@ jobs:
       - run: flutter --version
       
       - name: where im a  
-        run: ls && cd .. && ls
+        run: cd Tests-in-Flutter
         
       - name: Install dependencies  
         run: flutter clean && flutter pub get
