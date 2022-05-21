@@ -24,7 +24,7 @@ jobs:
       - run: flutter --version
       
       - name: where im a  
-        run: pwd
+        run: ls && cd .. && ls
         
       - name: Install dependencies  
         run: flutter clean && flutter pub get
